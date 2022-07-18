@@ -12,11 +12,7 @@ $ sudo dnf install nodejs
 ## React
 $ sudo npm install -g create-react-app
 
-# Set programs to start on machine boot
-
-## Set postgresql to start upon boot as this will be needed to run the website
-$ sudo systemctl enable postgresql
-
+# (2) create your web server folders and derectorys 
 
 ## Create a web application directory this directory will hold the code and the express files needed for the web application
 $ mkdir finalProject
@@ -34,6 +30,10 @@ $ sudo npm install express - save
 $ vim index.js
 Enter in the JS for your web application here
 
+# (3)Set programs to start on machine boot
+
+## Set postgresql to start upon boot as this will be needed to run the website
+$ sudo systemctl enable postgresql
 
 ## create a crontab that runs on startup that will start your webserver
 $ crontab -e
@@ -42,5 +42,7 @@ $ crontab -e
 $ @reboot pulseaudio -k && pulseaudio 
 $ @reboot redshift -c ~/.config/redshift/config.conf
 $ @reboot npm /home/tucker/tucker/index.js
+
+# What the final project should look like
 
 <img src="finalPERN.gif" width="700" />
