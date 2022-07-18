@@ -12,17 +12,17 @@ $ sudo dnf install nodejs
 
 ## React
 
-$ sudo npm install -g create-react-app
+        sudo npm install -g create-react-app
 
 # (2) create your web server folders and derectorys 
 
 ## Create a web application directory this directory will hold the code and the express files needed for the web application
 
-$ mkdir finalProject
+        mkdir finalProject
 
 ## Change directory’s into the one you just created
 
-$ cd finalProject
+        cd finalProject
 
 ## Initialize a json file
 
