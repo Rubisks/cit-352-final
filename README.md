@@ -34,7 +34,20 @@
 
 ## create a index file to start from this is where the JavaScript for you web application will live
         vim index.js
-Enter in the JS for your web application here
+
+# Enter in the JS for your web application here
+        const express = require('express')
+        const app = express()
+        const port = 3000
+
+        app.get('/', (req, res) => {
+        res.send('Hello World!')
+        })
+
+        app.listen(port, () => {
+        console.log(`Example app listening on port ${port}`)
+        })
+
 
 # (3)Set programs to start on machine boot
 
