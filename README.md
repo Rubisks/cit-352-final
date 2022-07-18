@@ -43,4 +43,4 @@ $ @reboot pulseaudio -k && pulseaudio
 $ @reboot redshift -c ~/.config/redshift/config.conf
 $ @reboot npm /home/tucker/tucker/index.js
 
-<img src="finalPERN.gif" width="400" />
+<img src="finalPERN.gif" width="700" />
