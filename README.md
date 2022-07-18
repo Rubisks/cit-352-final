@@ -1,7 +1,7 @@
 
 # Setting up a PERN stack web server on Fedora
 
-# (1) Install needed softwares
+# (1) Install needed software
 
 ## PostgreSQL
         sudo dnf install postgresql postgresql-server
@@ -14,7 +14,7 @@
 
         sudo npm install -g create-react-app
 
-# (2) create your web server folders and derectorys 
+# (2) Create your web server folders and the Website
 
 ## Create a web application directory this directory will hold the code and the express files needed for the web application
 
@@ -32,7 +32,7 @@
 
         sudo npm install express - save
 
-## create a index file to start from this is where the JavaScript for you web application will live
+## Create a index file to start from this is where the JavaScript for you web application will live
         vim index.js
 
 # Enter in the JS for your web application here
@@ -49,15 +49,15 @@
         })
 
 
-# (3)Set programs to start on machine boot
+# (3) Set programs to start on machine boot
 
 ## Set postgresql to start upon boot as this will be needed to run the website
         sudo systemctl enable postgresql
 
-## create a crontab that runs on startup that will start your webserver
+## Create a crontab that runs on startup that will start your webserver
         crontab -e
 
-## enter the following into the crontab editior
+## Enter the following into the crontab editior
         @reboot pulseaudio -k && pulseaudio 
         @reboot redshift -c ~/.config/redshift/config.conf
         @reboot npm /home/tucker/tucker/index.js
