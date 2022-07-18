@@ -7,23 +7,29 @@
 $ sudo dnf install postgresql postgresql-server
 
 ## Nodejs
+
 $ sudo dnf install nodejs
 
 ## React
+
 $ sudo npm install -g create-react-app
 
 # (2) create your web server folders and derectorys 
 
 ## Create a web application directory this directory will hold the code and the express files needed for the web application
+
 $ mkdir finalProject
 
 ## Change directory’s into the one you just created
+
 $ cd finalProject
 
 ## Initialize a json file
+
 $ npm init
 
 ## Install express while the current working directory is the directory you make for he web application to run the website
+
 $ sudo npm install express - save
 
 ## create a index file to start from this is where the JavaScript for you web application will live
